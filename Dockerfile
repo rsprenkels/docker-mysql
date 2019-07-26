@@ -1,10 +1,12 @@
-FROM python:3.6
+FROM python:3.7-alpine
 
-COPY . /app
+COPY requirements.txt /
+
+RUN pip3 install -r /requirements.txt
+
+COPY src/ /app
 
 WORKDIR /app
-
-RUN pip3 install -r requirements.txt
 
 ENTRYPOINT ["python3"]
 
