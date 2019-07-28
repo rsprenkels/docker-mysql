@@ -1,0 +1,12 @@
+- install docker
+
+- ssh-keygen -t rsa -b 4096 -C "ron.sprenkels@gmail.com
+
+https://medium.com/@mtngt/docker-flask-a-simple-tutorial-bbcb2f4110b5
+
+add user to docker (to prevend sudo all the time)
+sudo usermod -a -G docker $USER
+
+
+
+
